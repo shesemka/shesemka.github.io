@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сайт-визитка">
+    <meta name="author" content="Dolphine">
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:title" content="Its my first page">
+    
+    <title>Д/з урок 2 HTML</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Леонид</div>
+            <div class="menu"><ul>
+                <li>Обо мне</li>
+                <li>Услуги</li>
+                <li>Кейсы</li>
+                <li>Прайс</li>
+                <li>Отзывы</li>
+                <li>Контакты</li>
+            </ul></div>
+        </nav>
+    </header>
+    
+    <div class="main"><div class="main_description">
+                                                    <!-- Сразу ВОПРОС_1: В чате сказали, что можно задавать вопросы тут, поэтому сделал комментарии. Если такая обратная связь не подходит - напишите, обращусь в группу* Зачем здесь div в div-e? В уроке подробно не было объяснено. Сверьте пожалуйста с "logo" или "banner_01".    
+                                                    <!-- answer(если вам здесь будет удобно отвечать. Продублирую вопросы в группе) -->
+        <h1>Привет <br> Я Леонид</h1>
+        <h4>Фулл стек веб-разработчик</h4>
+        <input type="submit" value="Обо мне">
+        <input type="submit" value="Мои работы">
+    </div></div>
+        
+    <div class="banner_00"><div class="mini_poll_00"><h3>ОБО МНЕ</h3>  
+                                                                     <!-- ВОПРОС_2: Имена здесь должны быть уникальными, или можно делать одинаковые? И правильно ли именую? (Подумал - я в принципе не понимаю, когда нужно именовать одинаково, а когда нет, ну тут с опытом подозреваю дойдёт) -->    <!-- answer -->   
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci inventore reiciendis quae, atque distinctio suscipit autem laborum sunt perferendis odit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci inventore reiciendis quae, atque distinctio suscipit autem laborum sunt perferendis odit.</p>
+        <input type="submit" value="Скачать резюме"> 
+                                                    <!-- ВОПРОС_3: Тут нужна <input type="file">? Кнопка будет заполняться(картинкой и именем) в js/CSS? Полтора часа пролазил, чтобы кнопке <input type="file"> присвоить имя(не вышло, разумеется). Или мы вообще просто научимся делать <button></button> и сделаем через неё? Я сейчас должен об этом думать вообще? -->    <!-- answer -->    
+    </div></div>
+    
+    <div class="banner_01"><h3>ЧТО Я УМЕЮ</h3></div>
+    <div class="mini_poll_01">
+        <ul>
+            <li><big>Веб-дизайн</big></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci inventore reiciendis quae, atque distinctio suscipit autem laborum sunt perferendis odit.</p>
+            <li><big>Разработка</big></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci inventore reiciendis quae, atque distinctio suscipit autem laborum sunt perferendis odit.</p>
+            <li><big>CEO-Оптимизация</big></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci inventore reiciendis quae, atque distinctio suscipit autem laborum sunt perferendis odit.</p>
+            <li><big>Маркетинг</big></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci inventore reiciendis quae, atque distinctio suscipit autem laborum sunt perferendis odit.</p>
+        </ul>
+    </div>
+    
+    <div class="banner_02"><div class="mini_poll_02"><h3>Кейсы</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci inventore reiciendis quae, atque distinctio suscipit autem laborum sunt perferendis odit.</p>
+        <h4>CLIENT:</h4>
+            <p>Какая-то компания</p>
+        <h4>WEBSITE:</h4>
+            <p>http://www.somedomain.com</p>
+        <input type="submit" value="VISIT LIVE SITE">
+                                                     <!-- ВОПРОС_4: Здесь необходимо сделать кнопкой(как есть) или через <a href=""</a>? Я поискал - и так и так потом получится кнопка с ссылкой. -->    <!-- answer -->
+        <h4>Название проекта:</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div></div>
+    
+    <div class="banner_03"><div class="mini_poll_03"><h3>Расчёт стоимости</h3>
+        <ul>
+            <li>Тип сайта</li>
+                <select name="list_00" id="list">
+                    <option value="Opt1">Выберите пункт...</option>
+                </select>
+            <li>Дизайн</li>
+                <select name="list_01" id="list">
+                    <option value="Opt1">Выберите пункт...</option>
+                </select>
+            <li>Адаптивность</li>
+                <select name="list_02" id="list">
+                    <option value="Opt1">Выберите пункт...</option>
+                </select>   
+        </ul>
+        
+        <ul>
+            <li>Сроки</li>
+                <input type="number" name="text_input">
+            <li>Стоимость</li>
+                <input type="number" name="text_input">
+                                                        <!-- ВОПРОС_5: Не понимаю. Сроки и Стоимость по факту являются итогом работы Тип сайта, Адаптивность и Дизайн. того, что они в одном диве - хватит? Или нужно и в один <ul></ul> помещать? Короче не понимаю видимость, наверное. Это проблема. -->    <!-- answer -->
+        </ul>
+    </div></div>
+    
+    <div class="banner_04"><div class="mini_poll_04"><h3>НЕМНОГО СТАТИСТИКИ</h3>
+        <ul>
+            <input type="number" name="text_input">
+            <li><small>СЧАСТЛИВЫХ КЛИЕНТОВ</small></li>
+            <input type="number" name="text_input">
+            <li><small>ЧАСОВ РАБОТЫ</small></li>
+            <input type="number" name="text_input">
+            <li><small>ПРОЕКТОВ ЗАВЕРШЕНО</small></li>
+            <input type="number" name="text_input">
+            <li><small>НАГРАД ПОЛУЧЕНО</small></li>
+        </ul>
+    </div></div>
+    
+    <div class="banner_05"><div class="mini_poll_05"><h3>ОТЗЫВЫ</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci inventore reiciendis quae, atque distinctio suscipit autem laborum sunt perferendis odit.</p>
+        <p>Михаил, Ген директор ПАО "Газпром".</p>
+        <input type="radio" name="text_input1" value="1">
+        <input type="radio" name="text_input1" value="2">
+        <input type="radio" name="text_input1" value="3">
+                                                        <!-- ВОПРОС_6: К radio потом можно будет докрутить функционал перелистывания страницы? Я правильно сделал?  -->    <!-- answer -->
+    </div></div>
+    
+    <div class="banner_06"><div class="mini_poll_06"><h3>МОИ КОНТАКТЫ</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci inventore reiciendis quae, atque distinctio suscipit autem laborum sunt perferendis odit.</p>
+            <ul>
+                <li><small>Санкт-Петербург Какой-то проспект 11</small></li>
+                <li><small>info@companyname.com</small></li>
+                <li><small>+7 999 999-99-99</small></li>
+            </ul>
+            <p>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</p>
+            <ul>
+               
+                <li><small>Санкт-Петербург Какой-то проспект 11</small></li>
+                <li><small>info@companyname.com</small></li>
+                <li><small>+7 999 999-99-99</small></li>
+                <form action="">
+                    <input type="text" name="text_input" value="" placeholder="Имя">
+                    <input type="text" name="text_input" value="" placeholder="Email">
+                    <input type="text" name="text_input" value="" placeholder="Сообщение">
+                    <input type="reset" value="Отправить">
+                </form>
+            </ul>
+    </div></div>
+                                                                                             <!-- Картинки с заглушками не вставлял, вы не делали в начале, я подумал не надо. Надо - скажите, сделаю. -->    <!-- answer -->
+    
+</body>
+
+</html>
